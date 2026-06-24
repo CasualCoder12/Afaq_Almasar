@@ -18,10 +18,10 @@ iframe{width:100%;height:100%;border:none}
 <body>
 <div id="toolbar">
 <div class="lang-switcher">
-<span id="currentLang">العربية</span>
+<span id="currentLang">Enlgish</span>
 <button onclick="toggleLang()" class="lang-btn">
 <span class="lang-icon">🌐</span>
-<span id="toggleText">English</span>
+<span id="toggleText">العربية</span>
 </button>
 </div>
 </div>
@@ -2608,16 +2608,16 @@ function toggleLang(){
    en.style.display='block';
    document.documentElement.lang='en';
    document.documentElement.dir='ltr';
-   document.getElementById('currentLang').textContent='English';
-   document.getElementById('toggleText').textContent='العربية';
+   document.getElementById('currentLang').textContent='العربية';
+   document.getElementById('toggleText').textContent='English';
    current='en';
  } else {
    en.style.display='none';
    ar.style.display='block';
    document.documentElement.lang='ar';
    document.documentElement.dir='rtl';
-   document.getElementById('currentLang').textContent='العربية';
-   document.getElementById('toggleText').textContent='English';
+   document.getElementById('currentLang').textContent='English';
+   document.getElementById('toggleText').textContent='العربية';
    current='ar';
  }
 }
@@ -2625,8 +2625,8 @@ function toggleLang(){
 function syncLanguageUI(){
   const ar=document.getElementById('arFrame');
   const arabicVisible = ar.style.display !== 'none';
-  document.getElementById('currentLang').textContent = arabicVisible ? 'العربية' : 'English';
-  document.getElementById('toggleText').textContent = arabicVisible ? 'English' : 'العربية';
+  document.getElementById('currentLang').textContent = arabicVisible ? 'English' : 'العربية';
+  document.getElementById('toggleText').textContent = arabicVisible ? 'العربية' : 'English';
 }
 window.addEventListener('load', syncLanguageUI);
 </script>
