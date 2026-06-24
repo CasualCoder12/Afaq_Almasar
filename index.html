@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afaq Almasar Alhadithah Company LLC – Retail & E‑Commerce Trading Company</title>
+  <meta name="description" content="Afaq Almasar Alhadithah Company LLC is a professional trading company based in Madinah Munawara, Saudi Arabia, specializing in general trading, import & export, procurement, and supply chain solutions." />
+  <meta name="keywords" content="trading company Saudi Arabia, import export Madinah, procurement services, wholesale supply, general trading LLC" />
+  <meta property="og:title" content="Afaq Almasar Alhadithah Company LLC" />
+  <meta property="og:description" content="A trusted trading partner in Saudi Arabia – General Trading, Import & Export, Procurement, and Supply Chain Solutions." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --navy:      #0D1F3C;
+      --navy-mid:  #163055;
+      --teal:      #1A6B5A;
+      --teal-lt:   #228B73;
+      --gold:      #B8933A;
+      --white:     #FFFFFF;
+      --off-white: #F7F8FA;
+      --slate:     #4A5568;
+      --muted:     #718096;
+      --border:    #DDE1E8;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ── PAGE SYSTEM ── */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ── NAV ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 2px solid var(--navy);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .nav-brand .brand-en {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+    }
+    .nav-brand .brand-ar {
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    nav { display: flex; gap: 8px; align-items: center; }
+    nav button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--slate);
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: color 0.2s, background 0.2s;
+    }
+    nav button:hover, nav button.active {
+      color: var(--navy);
+      background: var(--off-white);
+    }
+    nav .nav-cta {
+      background: var(--navy);
+      color: var(--white);
+      padding: 9px 20px;
+      border-radius: 4px;
+    }
+    nav .nav-cta:hover { background: var(--navy-mid); color: var(--white); }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); transition: all 0.25s; }
+    .mobile-nav { display: none; background: var(--white); border-top: 1px solid var(--border); padding: 16px 24px 20px; }
+    .mobile-nav button { display: block; width: 100%; text-align: left; background: none; border: none; cursor: pointer; font-family: var(--font-body); font-size: 1rem; font-weight: 500; color: var(--slate); padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .mobile-nav button:last-child { border-bottom: none; }
+    .mobile-nav button:hover { color: var(--teal); }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 100px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero-desc {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      max-width: 480px;
+      margin-bottom: 36px;
+    }
+    .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--teal);
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: var(--teal-lt); }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      padding: 13px 28px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+      border: 2px solid rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.07); }
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .hero-stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .hero-stat {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px;
+      padding: 20px;
+    }
+    .hero-stat .stat-num {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .hero-stat .stat-lbl {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.65);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .hero-badge {
+      background: var(--teal);
+      border-radius: 6px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .hero-badge-icon { font-size: 2rem; }
+    .hero-badge-text { font-size: 0.85rem; color: rgba(255,255,255,0.9); line-height: 1.4; }
+    .hero-badge-text strong { display: block; color: var(--white); font-size: 0.95rem; margin-bottom: 2px; }
+
+    /* ── SECTION WRAPPER ── */
+    .section { padding: 80px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .section-header { margin-bottom: 56px; }
+    .section-header.centered { text-align: center; }
+    .section-header.centered .section-subtitle { margin: 0 auto; }
+
+    /* ── OVERVIEW ── */
+    .overview { background: var(--off-white); }
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .overview-text p {
+      color: var(--slate);
+      font-size: 0.975rem;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .overview-text p:last-child { margin-bottom: 0; }
+    .overview-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .highlight-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--teal);
+      border-radius: 4px;
+      padding: 18px;
+    }
+    .highlight-card .hc-icon { font-size: 1.6rem; margin-bottom: 10px; }
+    .highlight-card .hc-title { font-weight: 600; font-size: 0.9rem; color: var(--navy); margin-bottom: 4px; }
+    .highlight-card .hc-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 32px 28px;
+      transition: border-color 0.2s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--teal);
+      transform: scaleX(0);
+      transition: transform 0.25s;
+    }
+    .service-card:hover { border-color: var(--teal); transform: translateY(-2px); }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon { font-size: 2.2rem; margin-bottom: 16px; }
+    .service-name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+    .service-desc { font-size: 0.875rem; color: var(--slate); line-height: 1.65; }
+
+    /* ── WHY US ── */
+    .whyus { background: var(--navy); color: var(--white); }
+    .whyus .section-title { color: var(--white); }
+    .whyus .section-subtitle { color: rgba(255,255,255,0.65); }
+    .whyus .section-label { color: var(--gold); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .why-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+      padding: 28px;
+    }
+    .why-card .wc-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      opacity: 0.4;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+    .why-card .wc-title { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .why-card .wc-desc { font-size: 0.875rem; color: rgba(255,255,255,0.65); line-height: 1.65; }
+
+    /* ── DIVIDER BANNER ── */
+    .cta-banner {
+      background: var(--teal);
+      padding: 60px 24px;
+      text-align: center;
+      color: var(--white);
+    }
+    .cta-banner h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .cta-banner p { font-size: 1rem; opacity: 0.85; margin-bottom: 28px; }
+    .cta-banner .btn-white {
+      background: var(--white);
+      color: var(--teal);
+      padding: 13px 28px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .cta-banner .btn-white:hover { opacity: 0.9; }
+
+    /* ── ABOUT PAGE ── */
+    .about-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .about-intro-text p {
+      color: var(--slate);
+      font-size: 0.975rem;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .about-intro-text p:last-child { margin-bottom: 0; }
+    .about-info-box {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 28px;
+    }
+    .about-info-box h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--navy); }
+    .info-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border); gap: 12px; }
+    .info-row:last-child { border-bottom: none; }
+    .info-row .ir-label { font-size: 0.8rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+    .info-row .ir-value { font-size: 0.875rem; font-weight: 500; color: var(--navy); text-align: right; }
+    .mvv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .mvv-card {
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--navy);
+      border-radius: 4px;
+      padding: 28px;
+    }
+    .mvv-card:nth-child(2) { border-top-color: var(--teal); }
+    .mvv-card:nth-child(3) { border-top-color: var(--gold); }
+    .mvv-icon { font-size: 1.8rem; margin-bottom: 14px; }
+    .mvv-title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .mvv-text { font-size: 0.875rem; color: var(--slate); line-height: 1.7; }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .value-pill {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 16px 18px;
+    }
+    .value-pill .vp-icon { font-size: 1.4rem; }
+    .value-pill .vp-text { font-size: 0.875rem; font-weight: 600; color: var(--navy); }
+    .objectives-list { display: flex; flex-direction: column; gap: 16px; }
+    .objective-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 20px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .obj-marker {
+      background: var(--navy);
+      color: var(--white);
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .obj-content h4 { font-size: 0.95rem; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+    .obj-content p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── CONTACT PAGE ── */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+    .contact-form-wrap { display: flex; flex-direction: column; gap: 20px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group label { font-size: 0.8rem; font-weight: 600; color: var(--navy); letter-spacing: 0.04em; text-transform: uppercase; }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--navy);
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 4px;
+      padding: 12px 14px;
+      transition: border-color 0.2s;
+      outline: none;
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus { border-color: var(--navy); }
+    .form-group textarea { min-height: 120px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-submit {
+      background: var(--navy);
+      color: var(--white);
+      padding: 14px 32px;
+      border: none;
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      align-self: flex-start;
+    }
+    .form-submit:hover { background: var(--navy-mid); }
+    .form-success {
+      display: none;
+      background: #E6F4F1;
+      border: 1px solid var(--teal);
+      border-radius: 4px;
+      padding: 14px 18px;
+      color: var(--teal);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 32px; }
+    .contact-info-head { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .contact-info-sub { font-size: 0.875rem; color: var(--muted); }
+    .contact-details { display: flex; flex-direction: column; gap: 14px; }
+    .contact-detail-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 16px;
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .cdi-icon { font-size: 1.3rem; margin-top: 2px; }
+    .cdi-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 2px; }
+    .cdi-value { font-size: 0.9rem; color: var(--navy); font-weight: 500; word-break: break-all; }
+    .cdi-value a { color: var(--teal); }
+    .cdi-value a:hover { text-decoration: underline; }
+    .map-container {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      height: 300px;
+      background: var(--off-white);
+      position: relative;
+    }
+    .map-container iframe { width: 100%; height: 100%; border: none; }
+    .map-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.875rem;
+    }
+    .map-placeholder .mp-icon { font-size: 2.5rem; }
+    .map-placeholder strong { font-size: 1rem; }
+    .map-placeholder span { opacity: 0.65; font-size: 0.8rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.75);
+      padding: 56px 24px 28px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+    .footer-brand-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .footer-brand-tag { font-size: 0.75rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+    .footer-about { font-size: 0.8rem; line-height: 1.7; }
+    .footer-col h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 9px; }
+    .footer-links button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.65);
+      text-align: left;
+      padding: 0;
+      transition: color 0.2s;
+    }
+    .footer-links button:hover { color: var(--gold); }
+    .footer-contact-list { display: flex; flex-direction: column; gap: 10px; }
+    .footer-contact-list li { font-size: 0.8rem; display: flex; gap: 8px; align-items: flex-start; }
+    .footer-contact-list li span:first-child { opacity: 0.5; flex-shrink: 0; margin-top: 1px; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.75rem; opacity: 0.5; }
+    .footer-reg { font-size: 0.72rem; opacity: 0.4; text-align: right; }
+
+    /* ── INNER PAGE HERO ── */
+    .page-hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 64px 24px;
+    }
+    .page-hero-inner { max-width: 1200px; margin: 0 auto; }
+    .page-hero .ph-eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .page-hero h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .page-hero p { font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 540px; line-height: 1.65; }
+    .breadcrumb { font-size: 0.75rem; color: rgba(255,255,255,0.45); margin-bottom: 16px; }
+    .breadcrumb span { color: rgba(255,255,255,0.65); }
+
+    /* ── UTILITY ── */
+    .bg-off { background: var(--off-white); }
+    .divider { height: 1px; background: var(--border); max-width: 1200px; margin: 0 auto; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .overview-grid { grid-template-columns: 1fr; }
+      .about-intro { grid-template-columns: 1fr; }
+      .mvv-grid { grid-template-columns: 1fr 1fr; }
+      .contact-layout { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .hero { padding: 64px 20px; }
+      .section { padding: 60px 20px; }
+      .mvv-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .overview-highlights { grid-template-columns: 1fr; }
+      .hero-stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  
+.logo-img{height:58px;width:auto;display:block}
+.footer-logo{height:70px;width:auto;margin-bottom:12px}
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════ HEADER ══════════════════════ -->
+<header>
+  <div class="nav-inner">
+    <button class="nav-brand" onclick="showPage('home')" style="background:none;border:none;cursor:pointer;text-align:left;">
+    <img src="ChatGPT Image Jun 24, 2026, 04_21_42 PM.png" class="logo-img" alt="Afaq Almasar Alhadithah Company LLC Logo">
+    </button>
+    <nav>
+      <button id="nav-home" class="active" onclick="showPage('home')">Home</button>
+      <button id="nav-about" onclick="showPage('about')">About Us</button>
+      <button id="nav-contact" class="nav-cta" onclick="showPage('contact')">Contact Us</button>
+    </nav>
+    <button class="hamburger" id="hamburger" onclick="toggleMobile()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <button onclick="showPage('home');toggleMobile()">Home</button>
+    <button onclick="showPage('about');toggleMobile()">About Us</button>
+    <button onclick="showPage('contact');toggleMobile()">Contact Us</button>
+  </div>
+</header>
+
+<!-- ══════════════════════ HOME PAGE ══════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="hero-eyebrow">Madinah Munawara · Saudi Arabia</span>
+        <h1>Quality Products Delivered Through <span>Modern E‑Commerce</span></h1>
+        <p class="hero-desc">Afaq Almasar Alhadithah Company LLC is a modern retail-focused trading company offering quality products to customers through trusted online marketplaces, including Amazon, with a strong commitment to convenience, reliability, and customer satisfaction.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="showPage('contact')">Explore Our Company</button>
+          <button class="btn-outline" onclick="showPage('about')">About Our Company</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-stat-grid">
+          <div class="hero-stat">
+            <div class="stat-num">KSA</div>
+            <div class="stat-lbl">Saudi Registered</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num">LLC</div>
+            <div class="stat-lbl">Legal Structure</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num">8</div>
+            <div class="stat-lbl">Core Services</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num">360°</div>
+            <div class="stat-lbl">Trade Solutions</div>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-icon">✅</div>
+          <div class="hero-badge-text">
+            <strong>Officially Registered</strong>
+            Unified National Number: 7054640318 · Commercial Record Issued 24-06-2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY OVERVIEW -->
+  <section class="section overview">
+    <div class="section-inner">
+      <div class="overview-grid">
+        <div class="overview-text">
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">A Modern Retail Trading Company Focused on Online Customers</h2>
+          <p>Afaq Almasar Alhadithah Company LLC is a professionally registered limited liability company based in Madinah Munawara, Saudi Arabia. Founded in 2026, the company is engaged in a wide spectrum of commercial and trading activities designed to serve businesses, institutions, and end-customers across the Kingdom.</p>
+          <p>Our operations encompass general trading, customer-focused retail operations and digital commerce activities. We act as a reliable intermediary between global suppliers and local markets — ensuring quality, speed, and transparency throughout every transaction.</p>
+          <p>Operating under Vision 2030's mandate for a diversified Saudi economy, Afaq Almasar Alhadithah is positioned to grow alongside the Kingdom's expanding commercial sector, contributing positively to the national trade ecosystem.</p>
+        </div>
+        <div class="overview-highlights">
+          <div class="highlight-card">
+            <div class="hc-icon">🌐</div>
+            <div class="hc-title">Global Sourcing</div>
+            <div class="hc-desc">Connecting local demand with international suppliers across multiple industries.</div>
+          </div>
+          <div class="highlight-card">
+            <div class="hc-icon">📦</div>
+            <div class="hc-title">Supply Chain</div>
+            <div class="hc-desc">End-to-end logistics coordination from procurement to final delivery.</div>
+          </div>
+          <div class="highlight-card">
+            <div class="hc-icon">🤝</div>
+            <div class="hc-title">Partnerships</div>
+            <div class="hc-desc">Long-term relationships built on trust, reliability, and mutual growth.</div>
+          </div>
+          <div class="highlight-card">
+            <div class="hc-icon">📜</div>
+            <div class="hc-title">Fully Licensed</div>
+            <div class="hc-desc">Officially registered with the Saudi Ministry of Commerce and Investments.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Our Core Services</h2>
+        <p class="section-subtitle">We provide a full suite of trading and commercial services tailored to meet the demands of businesses operating in Saudi Arabia and beyond.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🏪</div>
+          <div class="service-name">General Trading</div>
+          <div class="service-desc">Wide-ranging commercial trading activities covering diverse product categories for businesses and institutions throughout Saudi Arabia.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✈️</div>
+          <div class="service-name">Import & Export</div>
+          <div class="service-desc">Facilitating cross-border trade with full documentation support, regulatory compliance, and customs coordination.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <div class="service-name">Product Sourcing</div>
+          <div class="service-desc">Identifying and securing reliable suppliers globally, matching client requirements with verified product sources at competitive prices.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <div class="service-name">Procurement Services</div>
+          <div class="service-desc">Strategic procurement management that reduces costs, shortens lead times, and ensures consistent product availability.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏭</div>
+          <div class="service-name">Wholesale Supply</div>
+          <div class="service-desc">Bulk supply solutions for distributors, retailers, and institutions seeking reliable wholesale partnerships at scale.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚚</div>
+          <div class="service-name">Retail Distribution</div>
+          <div class="service-desc">Organized distribution channels ensuring products reach end-consumers and retail outlets efficiently and on schedule.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💼</div>
+          <div class="service-name">Business Trading Solutions</div>
+          <div class="service-desc">Tailored B2B commercial solutions including trade facilitation, market entry support, and business partnership structuring.</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⛓️</div>
+          <div class="service-name">Supply Chain Support</div>
+          <div class="service-desc">Comprehensive supply chain coordination encompassing inventory management, logistics planning, and vendor performance tracking.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section whyus">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Our Advantages</div>
+        <h2 class="section-title">Why Choose Afaq Almasar Alhadithah</h2>
+        <p class="section-subtitle">We bring together professional standards, market knowledge, and a commitment to excellence that sets us apart as a preferred trading partner.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="wc-num">01</div>
+          <div class="wc-title">Reliable Business Partner</div>
+          <div class="wc-desc">We honor our commitments. Clients and suppliers trust us because we deliver what we promise — on time, every time, without compromise.</div>
+        </div>
+        <div class="why-card">
+          <div class="wc-num">02</div>
+          <div class="wc-title">Professional Service Standards</div>
+          <div class="wc-desc">Every interaction is handled with professionalism. From inquiry to delivery, we maintain clear communication and structured service delivery.</div>
+        </div>
+        <div class="why-card">
+          <div class="wc-num">03</div>
+          <div class="wc-title">Commitment to Quality</div>
+          <div class="wc-desc">Quality control is integral to our procurement process. We source products that meet specified standards and conduct diligent supplier evaluations.</div>
+        </div>
+        <div class="why-card">
+          <div class="wc-num">04</div>
+          <div class="wc-title">Strong Customer Focus</div>
+          <div class="wc-desc">Understanding client needs is at the core of what we do. Our team listens, adapts, and delivers solutions tailored to each business requirement.</div>
+        </div>
+        <div class="why-card">
+          <div class="wc-num">05</div>
+          <div class="wc-title">Efficient Operations</div>
+          <div class="wc-desc">Streamlined processes and responsive decision-making allow us to minimize delays and execute trade transactions with speed and precision.</div>
+        </div>
+        <div class="why-card">
+          <div class="wc-num">06</div>
+          <div class="wc-title">Saudi Market Expertise</div>
+          <div class="wc-desc">Deep understanding of the Kingdom's commercial environment, regulatory framework, and business culture positions us to serve clients effectively.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <h2>Ready to Explore a Business Partnership?</h2>
+    <p>Reach out to our team today. We are ready to discuss your trading, sourcing, or supply requirements.</p>
+    <button class="btn-white" onclick="showPage('contact')">Get in Touch Now</button>
+  </section>
+
+</div>
+
+<!-- ══════════════════════ ABOUT PAGE ══════════════════════ -->
+<div id="page-about" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><span onclick="showPage('home')" style="cursor:pointer">Home</span> / About Us</div>
+      <div class="ph-eyebrow">Our Company</div>
+      <h1>About Afaq Almasar Alhadithah</h1>
+      <p>Learn about our company background, mission, values, and the principles that guide our commercial operations in Saudi Arabia.</p>
+    </div>
+  </div>
+
+  <!-- INTRO + INFO BOX -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="about-intro">
+        <div class="about-intro-text">
+          <div class="section-label">Company Profile</div>
+          <h2 class="section-title">A Professional Trading Enterprise in the Heart of the Kingdom</h2>
+          <p>Afaq Almasar Alhadithah Company LLC — آفاق المسار الحديثة — is a Saudi Arabian limited liability company incorporated and operating in Madinah Munawara. The company was established in 2026 to participate actively in the Kingdom's growing commercial landscape through general trading and a broad range of procurement and supply services.</p>
+          <p>The company name, translating to "Horizons of the Modern Path," reflects our forward-looking approach to business: embracing modern commercial practices, ethical standards, and professional service delivery to build a sustainable trading enterprise that contributes to Saudi Arabia's economic growth.</p>
+          <p>As a one-person company (Establishment with LLC structure), Afaq Almasar Alhadithah operates with focus and agility, allowing for swift decision-making, personalized service, and a close working relationship with each client and supplier. Our lean structure is backed by broad commercial knowledge and a commitment to operational excellence.</p>
+          <p>We serve a diverse clientele including businesses seeking wholesale suppliers, companies requiring procurement support, distributors looking for product sourcing, and partners interested in collaborative trading arrangements within and beyond Saudi Arabia.</p>
+        </div>
+        <div>
+          <div class="about-info-box">
+            <h3>Company Registration Details</h3>
+            <div class="info-row">
+              <span class="ir-label">Company Name</span>
+              <span class="ir-value">Afaq Almasar Alhadithah Co. LLC</span>
+            </div>
+            <div class="info-row">
+              <span class="ir-label">Arabic Name</span>
+              <span class="ir-value">آفاق المسار الحديثة</span>
+            </div>
+            <div class="info-row">
+              <span class="ir-label">Legal Type</span>
+              <span class="ir-value">Limited Liability Company (LLC)</span>
+            </div>
+            <div class="info-row">
+              <span class="ir-label">Company Structure</span>
+              <span class="ir-value">One-Person Company</span>
+            </div>
+            <div class="info-row">
+              <span class="ir-label">Unified National Number</span>
+              <span class="ir-value">7054640318</span>
+            </div>
+            <div class="info-row">
+              <span class="ir-label">CR Issue Date</span>
+              <span class="ir-value">24-06-2026</span>
+            </div>
+            <div class="info-row">
+              <span class="ir-label">CR Confirmation Date</span>
+              <span class="ir-value">23-06-2027</span>
+            </div>
+            <div class="info-row">
+              <span class="ir-label">Location</span>
+              <span class="ir-value">Madinah Munawara, Ad Dar District 1, Saudi Arabia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- MISSION / VISION / COMMITMENT -->
+  <section class="section bg-off">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">Our Direction</div>
+        <h2 class="section-title">Mission, Vision & Commitment</h2>
+        <p class="section-subtitle">Three pillars that define how we operate and where we are headed as a business.</p>
+      </div>
+      <div class="mvv-grid">
+        <div class="mvv-card">
+          <div class="mvv-icon">🎯</div>
+          <div class="mvv-title">Our Mission</div>
+          <div class="mvv-text">To provide reliable, professional, and efficient trading and procurement services that create real value for our clients, suppliers, and partners. We aim to bridge market gaps, simplify complex supply chains, and deliver quality products through ethical and transparent business practices that uphold the highest commercial standards.</div>
+        </div>
+        <div class="mvv-card">
+          <div class="mvv-icon">🔭</div>
+          <div class="mvv-title">Our Vision</div>
+          <div class="mvv-text">To become a recognized and trusted name in Saudi Arabia's commercial trading sector — a company known for professionalism, reliability, and the ability to connect markets with precision. We envision a growing enterprise that expands its services, deepens its partnerships, and contributes meaningfully to Saudi Arabia's Vision 2030 economic diversification goals.</div>
+        </div>
+        <div class="mvv-card">
+          <div class="mvv-icon">🏆</div>
+          <div class="mvv-title">Commitment to Excellence</div>
+          <div class="mvv-text">Excellence is not a goal — it is a standard. Every service we deliver, every shipment we coordinate, and every client relationship we manage is handled with attention to detail and a determination to exceed expectations. We invest continuously in improving our processes, expanding our supplier networks, and enhancing our service quality.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Our Principles</div>
+        <h2 class="section-title">Core Values</h2>
+        <p class="section-subtitle">The values that shape our culture, guide our decisions, and define our character as a business.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-pill"><div class="vp-icon">🤝</div><div class="vp-text">Trust & Integrity</div></div>
+        <div class="value-pill"><div class="vp-icon">⚡</div><div class="vp-text">Operational Efficiency</div></div>
+        <div class="value-pill"><div class="vp-icon">🌟</div><div class="vp-text">Quality Commitment</div></div>
+        <div class="value-pill"><div class="vp-icon">🔐</div><div class="vp-text">Transparency</div></div>
+        <div class="value-pill"><div class="vp-icon">👥</div><div class="vp-text">Client-Centered Service</div></div>
+        <div class="value-pill"><div class="vp-icon">📈</div><div class="vp-text">Continuous Improvement</div></div>
+        <div class="value-pill"><div class="vp-icon">🌍</div><div class="vp-text">Global Perspective</div></div>
+        <div class="value-pill"><div class="vp-icon">⚖️</div><div class="vp-text">Ethical Business Conduct</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS OBJECTIVES -->
+  <section class="section bg-off">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-label">Our Roadmap</div>
+        <h2 class="section-title">Business Objectives</h2>
+        <p class="section-subtitle">Clear, focused objectives that direct our business strategy and commercial growth.</p>
+      </div>
+      <div class="objectives-list">
+        <div class="objective-item">
+          <div class="obj-marker">A</div>
+          <div class="obj-content">
+            <h4>Establish a Strong Market Presence in Saudi Arabia</h4>
+            <p>Build recognition as a dependable and professional trading company in Madinah Munawara and across the Kingdom by consistently delivering quality services and maintaining strong business relationships.</p>
+          </div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-marker">B</div>
+          <div class="obj-content">
+            <h4>Expand Supplier and Partner Networks</h4>
+            <p>Continuously develop and diversify our network of domestic and international suppliers, manufacturers, and trade partners to increase the breadth and depth of products and services we can offer clients.</p>
+          </div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-marker">C</div>
+          <div class="obj-content">
+            <h4>Deliver Consistent Customer Satisfaction</h4>
+            <p>Maintain high customer satisfaction through proactive communication, accurate order fulfillment, timely deliveries, and responsive after-sales support that builds long-term client loyalty.</p>
+          </div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-marker">D</div>
+          <div class="obj-content">
+            <h4>Ensure Full Regulatory Compliance</h4>
+            <p>Operate in full compliance with Saudi Arabian commercial regulations, import/export laws, and trade licensing requirements — ensuring a secure and trustworthy business environment for all stakeholders.</p>
+          </div>
+        </div>
+        <div class="objective-item">
+          <div class="obj-marker">E</div>
+          <div class="obj-content">
+            <h4>Support Saudi Arabia's Vision 2030 Goals</h4>
+            <p>Align business activities with the Kingdom's strategic objectives for economic diversification, supporting local commerce, increasing trade efficiency, and contributing to the national private sector ecosystem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Interested in Working With Us?</h2>
+    <p>Contact our team to discuss how Afaq Almasar Alhadithah can support your trading and procurement needs.</p>
+    <button class="btn-white" onclick="showPage('contact')">Contact Us Today</button>
+  </section>
+
+</div>
+
+<!-- ══════════════════════ CONTACT PAGE ══════════════════════ -->
+<div id="page-contact" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><span onclick="showPage('home')" style="cursor:pointer">Home</span> / Contact</div>
+      <div class="ph-eyebrow">Get in Touch</div>
+      <h1>Contact Us</h1>
+      <p>We welcome inquiries from customer-focused retail operations and digital commerce activities. Send us a message and our team will respond promptly.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="contact-layout">
+
+        <!-- FORM -->
+        <div>
+          <div class="section-label">Send an Inquiry</div>
+          <h2 class="section-title" style="margin-bottom:32px;">Business Inquiry Form</h2>
+          <div class="contact-form-wrap" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name *</label>
+                <input type="text" id="fname" placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address *</label>
+                <input type="email" id="femail" placeholder="your@email.com" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fphone">Phone Number</label>
+                <input type="tel" id="fphone" placeholder="+966 XX XXX XXXX" />
+              </div>
+              <div class="form-group">
+                <label for="fsubject">Inquiry Type</label>
+                <select id="fsubject">
+                  <option value="">Select inquiry type</option>
+                  <option>General Trading Inquiry</option>
+                  <option>Import / Export</option>
+                  <option>Product Sourcing</option>
+                  <option>Procurement Services</option>
+                  <option>Wholesale / Supply</option>
+                  <option>Partnership Proposal</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message *</label>
+              <textarea id="fmessage" placeholder="Please describe your business inquiry, requirements, or questions in detail…"></textarea>
+            </div>
+            <button class="form-submit" onclick="submitForm()">Send Inquiry →</button>
+            <div class="form-success" id="formSuccess">
+              ✓ &nbsp; Your inquiry has been received. We will respond within 1–2 business days. Thank you.
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <div>
+            <div class="contact-info-head">Contact Information</div>
+            <div class="contact-info-sub">Reach us directly through any of the channels below.</div>
+          </div>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="cdi-icon">📞</div>
+              <div>
+                <div class="cdi-label">Phone</div>
+                <div class="cdi-value"><a href="tel:+966504815875">+966 50 481 5875</a></div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="cdi-icon">✉️</div>
+              <div>
+                <div class="cdi-label">Email</div>
+                <div class="cdi-value"><a href="mailto:sher.nawaz.sa@gmail.com">sher.nawaz.sa@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="cdi-icon">📍</div>
+              <div>
+                <div class="cdi-label">Address</div>
+                <div class="cdi-value">Ad Dar District 1, Madinah Munawara, Saudi Arabia</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="cdi-icon">🕐</div>
+              <div>
+                <div class="cdi-label">Business Hours</div>
+                <div class="cdi-value">24/7 Customer Support & Online Availability</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAP -->
+          <div>
+            <div class="cdi-label" style="margin-bottom:12px;">Location — Madinah Munawara</div>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.946!2d39.6132!3d24.4682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbcfeb3eb7b81%3A0x6b6e6e6e6e6e6e6e!2sAl%20Madinah%20Al%20Munawwarah%2C%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Location of Afaq Almasar Alhadithah Company LLC in Madinah Munawara"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS INQUIRY CALLOUT -->
+  <section class="section bg-off">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <div class="section-label">Partner With Us</div>
+        <h2 class="section-title">customer-focused retail operations and digital commerce activities</h2>
+        <p class="section-subtitle">Whether you are a supplier seeking distribution in Saudi Arabia, a buyer requiring sourcing support, or a company looking for a trusted trade partner — we are ready to engage.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;margin-top:8px;">
+        <div class="highlight-card">
+          <div class="hc-icon">🏢</div>
+          <div class="hc-title">For Businesses</div>
+          <div class="hc-desc">Procurement support, B2B supply, and commercial trading solutions tailored to your needs.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="hc-icon">🌐</div>
+          <div class="hc-title">For Suppliers</div>
+          <div class="hc-desc">Partner with us to distribute your products to the Saudi market through our trade network.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="hc-icon">🤝</div>
+          <div class="hc-title">For Partners</div>
+          <div class="hc-desc">Explore joint business arrangements, trade cooperation, and strategic commercial partnerships.</div>
+        </div>
+        <div class="highlight-card">
+          <div class="hc-icon">📩</div>
+          <div class="hc-title">Quick Response</div>
+          <div class="hc-desc">All inquiries are acknowledged within 24 hours. Expect professional and prompt communication.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <img src="ChatGPT Image Jun 24, 2026, 04_21_42 PM.png" class="footer-logo" alt="Logo"><div class="footer-brand-name">Afaq Almasar Alhadithah Company LLC</div>
+        <div class="footer-brand-tag">آفاق المسار الحديثة • Madinah, Saudi Arabia</div>
+        <p class="footer-about">A professionally registered Saudi trading company providing general trading, import & export, procurement, wholesale supply, and commercial supply chain services across the Kingdom.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <div class="footer-links">
+          <button onclick="showPage('home')">Home</button>
+          <button onclick="showPage('about')">About Us</button>
+          <button onclick="showPage('contact')">Contact Us</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <div class="footer-links">
+          <button>General Trading</button>
+          <button>Import & Export</button>
+          <button>Product Sourcing</button>
+          <button>Procurement</button>
+          <button>Wholesale Supply</button>
+          <button>Distribution</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact-list">
+          <li><span>📞</span><span><a href="tel:+966504815875" style="color:rgba(255,255,255,0.65)">+966 50 481 5875</a></span></li>
+          <li><span>✉️</span><span><a href="mailto:sher.nawaz.sa@gmail.com" style="color:rgba(255,255,255,0.65)">sher.nawaz.sa@gmail.com</a></span></li>
+          <li><span>📍</span><span>Ad Dar District 1, Madinah Munawara, KSA</span></li>
+          <li><span>🏢</span><span>UNN: 7054640318</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Afaq Almasar Alhadithah Company LLC. All rights reserved.</p>
+      <div class="footer-reg">
+        CR Issued: 24-06-2026 &nbsp;·&nbsp; Confirmation: 23-06-2027 &nbsp;·&nbsp; LLC · One-Person Company
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function showPage(name) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + name).classList.add('active');
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    const btn = document.getElementById('nav-' + name);
+    if (btn) btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function toggleMobile() {
+    const nav = document.getElementById('mobileNav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function submitForm() {
+    const name = document.getElementById('fname').value.trim();
+    const email = document.getElementById('femail').value.trim();
+    const msg = document.getElementById('fmessage').value.trim();
+    if (!name || !email || !msg) {
+      alert('Please fill in the required fields: Name, Email, and Message.');
+      return;
+    }
+    document.getElementById('formSuccess').style.display = 'block';
+    document.getElementById('fname').value = '';
+    document.getElementById('femail').value = '';
+    document.getElementById('fphone').value = '';
+    document.getElementById('fsubject').value = '';
+    document.getElementById('fmessage').value = '';
+    setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 6000);
+  }
+</script>
+</body>
+</html>
